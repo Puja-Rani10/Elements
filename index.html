@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<title>html block and inline elements</title>
+	<style>
+		table,th,tr,td{
+			border: 1px solid black;
+		}
+		.ex1{
+			font-size: 30px;
+		}
+		.ex2{
+			font-size: 50px
+		}
+	</style>
+</head>
+<body>
+	<h1>block elements</h1>
+    <ol><li>pizza</li>
+    <li>burger</li>
+    <li>ice-cream</li>
+    </ol>
+    <ol start="34">
+    	<li>coffe</li>
+    	<li>tea</li>
+    </ol>
+    <p> Here is a quote from WWF's website:</p>
+    <blockquote cite="http://worldwildlife.org/who/index.html">
+    	For 50 years,WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and it supported by 1.2 million members in the United States and close to 5 million globally.
+    </blockquote>
+    <dl>
+    	<dt>Coffe</dt>
+    	<dd>Black hot drink</dd>
+    	<dt>Milk</dt>
+    	<dd>White cold drink</dd>
+    </dl>
+    <form action="/action_page.php">
+    	<fieldset>
+    		<legend>personal information</legend>
+    		<label for="fname">first name:</label>
+    		<input type="text" id="fname" name="fname"><br><br>
+    		<label for="lname">last name:</label>
+    		<input type="text" id="lname" name="lname"><br><br>
+    		<label for="email">email:</label>
+    		<input type="email" id="email" name="email"><br><br>
+    		<label for="birthday">birthday</label>
+    		<input type="date" id="birthday" name="birthday"><br><br>
+    		<input type="submit" value="submit ">
+    	</fieldset>
+    	<figure>
+    		<img src="church.jpg" alt="church" style="width: 30%">
+    		<figcaption>Fig.1-The Saint-Eustach Church in Paris,France</figcaption>
+    	</figure>
+    </form>
+    <hr>
+    <p>Charles Dickens(1812-70)was not only a great stroy-teller, but also tried, through his novels, to make people aware of the social evils on the day.In Oliver Twist, one of his best-loved stories, he tells of the injustice cruelty suffered by poor people.</p>
+    <nav>
+    	<a href="/html/">html</a>
+    </nav>
+    	<script>
+    		document.write("hello world")
+    	</script>
+    	<noscript>Sorry,your browser does not support JavaScript</noscript>
+    	<pre> 
+        text in a pre element
+    	is dispayled in the fixed-width
+        and it preserves
+        both space and line breaks
+        </pre>
+        <table>
+        	<tr>
+        		<th>month</th>
+        		<th>savings</th>
+        	</tr>
+        	<tr><td>january</td>
+                <td>$100</td>
+        	</tr>
+        	<tr>
+        		<td>february</td>
+        		<td>$80</td>
+        	</tr>
+        </table>
+    <h1>inline element</h1>
+    <p>The <abbr title="world health organization">WHO</abbr>was founded in1948</p>
+    <p>this paragraph will go left-to-right</p>
+    <p><bdo dir="rtl">this paragraph will go left-to-right</bdo></p>
+    <p>this is a normal paragraph</p>
+    <p class="ex1"> this is a bigger paragraph</p>
+    <p class="ex2"> this is a much bigger paragraph </p>
+    
+    <img src="images/book.jpg" width="300" alt="book">
+    <p><cite>Under the Tuscan Sun</cite>:at Home in Italy is a 1996 memoir by American author Frances Mayes.</p>
+    <p>for more information <button type="button" onclick="alert('hello world!')">click here</button></p>
+    <p>The HTML <code>button</code> tag defines a clickable button</p>
+    <p><dfn>HTML</dfn> is a standard markup language for creating web pagess.</p>
+    <p><em>Tina</em> is a very good student</p>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    	<input type="range" id="a" value="50">
+    	+<input type="number" id="b" value="25">
+    	=<output name="x" for="a b"></output>
+    </form>
+    <p><strong>Note:</strong>The output element is not supported in Edge 12 (or eariler).</p>
+    <p>Massage from my computer:</p>
+    <p><samp>file not found.<br>press F1 to continue</samp></p>
+    <p id="demo"></p>
+    <script>
+    	document.getElementById("demo").innerHTML="Hello JavaScript!";
+    </script>
+    <form action="/action_page.php">
+    	<label for="cars">Choose a car:</label>
+    	<select name="cars" id="cars">
+    		<option value="volvo">Volvo</option>
+    		<option value="saab">Saab</option>
+    		<option value="opel">Opel</option>
+    		<option value="audi">Audi</option>
+    	</select>
+    	<br><br>
+    	<input type="submit" value="submit">
+    </form>
+    <p>Click the "submit" button and the form-data will be sent to a page on the server called "action_page.php"</p>
+    <p>this is normal text</p>
+    <p><small>this is small text</small></p>
+    <p>my mother has <span style="color:blue;font-weight: bold">blue</span> eyes</p>
+    <form action="/action_page.php">
+    	<label for="html">Html:</label>
+    	<textarea id="html" name="html" rows="4" cols="50">
+    		HTML stands for Hyper Text Markup Language.It is the standard markup language for web pages.
+    	</textarea>
+    </form>
+    <p>the area of a triangle is :1/2x <var>b</var> x <var>h</var>, where <var>b</var> is base, and <var>h</var> is the vertical height </p>
+</body>
+</html>
